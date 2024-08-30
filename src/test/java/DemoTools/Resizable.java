@@ -6,22 +6,31 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class Resizable extends BaseClass {
-	@Test
-	public void resizable()
-	{
-            driver.get("https://demoqa.com/resizable");
+    @Test
+    public void resizable() {
+        driver.get("https://demoqa.com/resizable");
 
-            // Locate the resizable element
-            WebElement resizableElement = driver.findElement(By.id("resizableBoxWithRestriction"));
+        // Set browser window size
+        driver.manage().window().setSize(new Dimension(1920, 1080));
 
-            WebElement resizeHandle = resizableElement.findElement(By.xpath("//span[text()='react-resizable-handle react-resizable-handle-se']"));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        
+        // Locate the resizable element
+        WebElement resizableElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("resizableBoxWithRestriction")));
 
-            Actions actions = new Actions(driver);
-            actions.dragAndDropBy(resizeHandle, 100, 100).perform();
-            int newWidth = resizableElement.getSize().getWidth();
-            int newHeight = resizableElement.getSize().getHeight();
-            System.out.println("New Width: " + newWidth);
-            System.out.println("New Height: " + newHeight);
+        // Locate and scroll to the resize handle
+        WebElement resizeHandle = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".react-resizable-handle.react-resizable-handle-se")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", resizeHandle);
+
+        // Perform drag and drop action with adjusted offset
+        Actions actions = new Actions(driver);
+        actions.dragAndDropBy(resizeHandle, 50, 50).perform(); // Adjust offsets as necessary
+
+        // Verify new dimensions
+        int newWidth = resizableElement.getSize().getWidth();
+        int newHeight = resizableElement.getSize().getHeight();
+        System.out.println("New Width: " + newWidth);
+        System.out.println("New Height: " + newHeight);
     }
 }
 
