@@ -1,0 +1,338 @@
+"ID","Title","Created By","Expected Result","Preconditions","Priority","Section","Steps","Updated By"
+"C94","Ensure that the Elements page loads correctly.","Prathi H V","1.Website should be loaded.
+2.The Elements page should load successfully with the correct header and sub-sections (e.g., """"Text Box"""", """"Check Box"""", """"Radio Button"""", etc.).","1.Check for internet connection.","High","Elements","1.Navigate to the DEMOQA website.
+2.Click on the """"Elements"""" tab in the navigation menu.","Prathi H V"
+"C149","Verify Element Alignment","Prathi H V","1.All elements should aligned according to the design specifications.","1.The Demo QA page is accessible.","Medium","Elements","1.Check the alignment of various elements (e.g., buttons, text fields) using a grid or ruler tool.","Prathi H V"
+"C95","Test the functionality of the Text Box element.","Prathi H V","1.The """"Text Box"""" page should loads, displaying text box fields for """"Full Name,"""" """"Email,"""" """"Current Address,"""" and """"Permanent Address.""""
+2.The text box should accepts the input without errors.
+3.The text box should accepts the input without errors.
+4.The text box should accepts the input without errors.
+5.The text box should accepts the input without errors.
+6.The entered details should be displayed correctly in output area.","1.Check for the internet connection.
+2.User should be in Elements page.","High","TextBox","1.Navigate to the """"Text Box"""" section under Elements.
+2.Enter name into the """"Full Name"""" text box.
+3.Enter mail id into the """"Email"""" text box.
+4.Enter current address into the """"Current Address"""" text box.
+5.Enter permanent address into the """"Permanent Address"""" text box.
+6.Click the """"Submit"""" button.","Prathi H V"
+"C96","Verify Checkbox Functionality","Prathi H V","1.The DEMOQA Checkbox page should loads successfully.
+2.All checkboxes should be in their default state (unchecked).
+3.The """"Home"""" checkbox should be checked.
+4.The """"Home"""" checkbox should be unchecked.","1.Check for internet connection.
+2.User can access to the DEMOQA page with the checkbox feature.","Critical","CheckBox","1.Navigate to the checkbox Page.
+2.Observe the state of all checkboxes on the page.
+3. Locate a single checkbox (e.g., """"Home"""" checkbox) and click it to check it.
+4.Click the """"Home"""" checkbox again to uncheck it.","Prathi H V"
+"C97","Check and uncheck Parent Checkbox.","Prathi H V","1.All child checkboxes under the """"Desktop"""" parent should be checked.
+2.All child checkboxes under the """"Desktop"""" parent should be unchecked.","1.Check for internet connection.
+2.User should be in Checkbox page.","Medium","CheckBox","1. Locate a parent checkbox (e.g., """"Desktop"""" checkbox) and click it to check it.
+2.Click the """"Desktop"""" parent checkbox again to uncheck it.","Prathi H V"
+"C98","Check and uncheck Individual Child Checkbox","Prathi H V","1. The """"Downloads"""" checkbox should be checked.
+2.The """"Downloads"""" checkbox should be unchecked.
+3.The """"Desktop"""" parent checkbox should be checked if any of its child checkboxes are checked.","1.Check for internet connection.
+2.User should be in Checkbox page.","Medium","CheckBox","1.Locate a child checkbox under a parent (e.g., """"Downloads"""" under """"Desktop"""") and click it to check it.
+2. Click the """"Downloads"""" checkbox again to uncheck it.
+3.Check that the parent checkbox (""""Desktop"""") remains checked if any child checkbox is still checked.","Prathi H V"
+"C99","Check and uncheck All Checkboxes and Verify Checkbox States After Refresh","Prathi H V","1.All checkboxes on the page should be checked.
+2.All checkboxes on the page should be unchecked.
+3.All checkboxes should revert to their default state (unchecked) after the page refreshes.","1.User should connected to internet.
+2.User should be in Checkbox page.","Medium","CheckBox","1.Click the root parent checkbox (Home) to check all checkboxes in the hierarchy.
+2.Click the root parent checkbox again to uncheck all checkboxes.
+3.Check some checkboxes (both parent and child) and then refresh the page.","Prathi H V"
+"C100","Verify Radio Button Selection","Prathi H V","1.Radio Buttons section should visible (e.g., """"Yes"""", """"Impressive"""", """"No"""").
+2.The """"Yes"""" radio button should be selected and The """"Impressive"""" and """"No"""" radio buttons should be deselected.The selected option should be displayed correctly in the UI.","1.Check for internet connection.
+2.User is on the DEMOQA page .","Critical","RadioButton","1.Navigate to the Radio Buttons section.
+2.Select """"yes"""" radio button.","Prathi H V"
+"C101","Ensure that clicking on a selected radio button does not deselect it and that it remains selected.","Prathi H V","1.The """"Impressive"""" radio button should remain selected.
+2.No other radio button should be selected or deselected.","1.User is on the DEMOQA page and the Radio Buttons section is visible. 
+2.A radio button should be previously selected.","Medium","RadioButton","1.Verify that the """"Impressive"""" radio button is selected.
+2.Click on the """"Impressive"""" radio button again.","Prathi H V"
+"C102","Ensure that each radio button has the correct label and that it correctly reflects its value when selected.","Prathi H V","1.Radio buttons page should be displayed.
+2.The labels of the radio buttons should be correct and match the options (""""Yes"""", """"Impressive"""", """"No"""").
+3.The value of the selected radio button should correspond to the correct label and be displayed as selected.","1.User is on the DEMOQA page.","Medium","RadioButton","1.Navigate to the Radio Buttons section on the DEMOQA page.
+2.Verify the labels of the radio buttons (""""Yes"""", """"Impressive"""", """"No"""").
+3.Click on each radio button and verify the selected option.","Prathi H V"
+"C103","Ensure that a disabled radio button cannot be selected","Prathi H V","1.The disabled radio button should not be selectable.
+2.The button should be visually indicated as disabled (e.g. Showing in red colour block).","1.User is on the DemoQA page and the Radio Buttons section is visible.
+2.There should be a disabled radio button.","Medium","RadioButton","1.Locate a disabled radio button(No).
+2.Attempt to click on the disabled radio button.","Prathi H V"
+"C104","Ensure that the web table displays data correctly with the appropriate headers and rows.","Prathi H V","1.Web Tables section page should be displayed.
+2.The table should display correct headers.
+3.Data rows should be visible and properly aligned under the respective headers. All expected columns (First Name, Last Name, Age, Email, Salary, Department) should be present.","1.User is on the DemoQA page.","Medium","Web Tables","1.Navigate to the Web Tables section on the DemoQA page.
+2.Verify the presence of table headers (e.g., """"First Name"""", """"Last Name"""", """"Age"""", """"Email"""", """"Salary"""", """"Department"""").
+3.Check that rows of data are displayed under each header.","Prathi H V"
+"C105","Add a New Row to Web Table","Prathi H V","1.A new row should added to the table with the following details: """"First Name"""" ,""""Last Name"""", """"Age"""" ,""""Email"""", """"Salary"""".
+2.All details should be entered successfully. 
+3.The table should displays the new row with the entered information.","1.User should connected to internet.
+2.User should be in Web Tables page.","Medium","Web Tables","1.Click the """"Add"""" button to open the form for adding a new row.
+2.Enter the following details: """"First Name"""" ,""""Last Name"""", """"Age"""" ,""""Email"""", """"Salary""""
+3.Click the """"Submit"""" button.","Prathi H V"
+"C106","Delete an Existing Row","Prathi H V","1.Web tables page should loaded.
+2.The selected row should be removed from the table.","1.User is logged in and on the Web Tables page with at least one existing row.","Medium","Web Tables","1.Navigate to the Web Tables section.
+2.Locate an existing row and click the """"Delete"""" button for that row.","Prathi H V"
+"C107","Verify Button Visibility and Text","Prathi H V","1.The Buttons section should visible on the page.
+2.The following buttons are present: Click Me, Double Click Me, Right Click Me, Click Me Too and Each button displays the correct text as mentioned.","1.User should be in DemoQA page.","High","Buttons","1.Navigate to the Buttons section.
+3.Check for the presence of each button.","Prathi H V"
+"C108","Verify Double Click Button Action","Prathi H V","1.Buttons page should be visible.
+2.A message should appear that says, """"You have done a double click"""".","1.User should be in DemoQA page.
+2.User should navigated to elements feature.","Medium","Buttons","1.Navigate to the Buttons page.
+2.Locate and double-click the """"Double Click Me"""" button.","Prathi H V"
+"C109","Verify Right Click Button Action","Prathi H V","1.Buttons page should be visible.
+2.A message should appear that says, """"You have done a right click"""".","1.User should be in DemoQA page.
+2.User should navigated to elements feature.","Medium","Buttons","1.Navigate to the Buttons page.
+2.Locate and right-click the """"Right Click Me"""" button.","Prathi H V"
+"C110","Verify  Click me Button Action","Prathi H V","1.Buttons page should be visible.
+2.A message should appear that says, """"You have done a dynamic click"""".","1.User should be in DemoQA page.
+2.User should navigated to elements feature.","Medium","Buttons","1.Navigate to the Buttons page.
+2.Locate and click the """"Click Me"""" button.","Prathi H V"
+"C111","Verify Link Navigation","Prathi H V","1.The browser should navigate to the DemoQA page.
+2.Links section should be displayed with the Home link.
+3.The URL in the address bar should reflect the new page.","1.User should connected to internet.","Critical","Links","1.Navigate to the DEMOQA page.
+2.Locate Links section.
+3.click the """"Home"""" link.","Prathi H V"
+"C112","Verify Broken Links","Prathi H V","1.Broken links section should loads successfully.
+2.All links should navigate to valid pages without errors.
+3.If a link is broken, it should display This page returned a 500 status code.","1.Navigate to the DEMOQA page.","Medium","BrokenLinks","1.Navigate to broken links section.
+2.Locate all links on the page.
+3.Click each link and observe the result.","Prathi H V"
+"C113","Verify valid link","Prathi H V","1.Broken links section should loads successfully.
+2.link should navigate to valid pages without errors.","1.Navigate to the DEMOQA page.
+2.User should be in Elements section.","Medium","BrokenLinks","1.Navigate to broken links section.
+2.Locate """"click here for valid link"""" on the page and click on the link.","Prathi H V"
+"C114","To verify that users can successfully download a file using the download feature.","Prathi H V","1.Page should successfully visible with """"download"""" button.
+2.The file should be successfully downloaded.
+3.The downloaded file is saved in the local file system with the correct name and format.
+4.The file can be opened and viewed with the appropriate application.","1.Navigate to the DEMOQA page.
+2.User should be in Elements section.","Medium","Upload and download.","1.Navigate to the upload and download section on the page.
+2.Identify the file available for download (e.g., sample.pdf)and Click on the """"Download"""" button.
+3.Monitor the download progress and completion.
+4.Verify that the downloaded file is saved to the local file system.","Prathi H V"
+"C115","To verify that users can successfully upload a file using the choose a file feature.","Prathi H V","1.Page should successfully visible with """"choose a file"""" button.
+2.The page should navigate to file manager where user can upload a file.
+3.Selected file should be uploaded successfully and should be visible in upload section.","1.Navigate to the DEMOQA page.
+2.User should be in Elements section.","Medium","Upload and download.","1.Navigate to the upload and download section on the page.
+2.Click on the """"choose a file"""" button.
+3.Select particular file and click on open.","Prathi H V"
+"C116","Check Visibility of Dynamic Element","Prathi H V","1.User should be able to see Dynamic properties section.
+2.Initially, the """"Visible After 5 Seconds"""" button should not be visible. After 5 seconds, the button should appear and be visible on the page.","1.User should Navigate to the DemoQA page.
+2.Locate Elements section.","Medium","Dynamic Properties","1.Navigate and click on the """"Dynamic Properties"""" link in the sidebar.
+2.Observe the """"Visible After 5 Seconds"""" button.","Prathi H V"
+"C117","Check Button Enabled/Disabled State","Prathi H V","1.User should be able to see Dynamic properties section.
+2.Initially, the """"Enable After 5 Seconds"""" button should be disabled .After 5 seconds, the button should become enabled (clickable).","1.User should Navigate to the DemoQA page.
+2.Locate Elements section.","Medium","Dynamic Properties","1.Navigate and click on the """"Dynamic Properties"""" link in the sidebar.
+2.Observe the """"Enable After 5 Seconds"""" button.","Prathi H V"
+"C150","Verify Forms feature","Prathi H V","1.Forms tab should opened with the practice form Section.","1.The Demo QA page is accessible.
+2.The Demo QA page contains a form.","Medium","Forms","1.Naviagte to Forms Feature tab.","Prathi H V"
+"C118","Validate required fields on Practice Form","Prathi H V","1.Practice form page should be loaded.
+2.An error message should be displayed for each required field indicating that the field cannot be empty.","1.User should be in Forms Section.","Critical","Practice Form","1.Navigate to the Practice Form page.
+2.Leave all fields blank. Attempt to submit the form by clicking the """"Submit"""" button.","Prathi H V"
+"C119","Check input fields for proper data entry","Prathi H V","1.Page should be loaded .
+2.Valid data should be accepted in all fields.
+3.The form should be submitted successfully. A confirmation message should be displayed, such as """"Form submitted successfully."""" The data should be visible on the confirmation page or in a review section.","1.User should be in Forms Section.","Medium","Practice Form","1.Navigate to the Practice Form page.
+2.Enter valid data in all fields: """"First Name"""", """"Last Name"""", """"Email"""", """"Gender"""", """"Mobile Number"""", """"Date of Birth"""", """"Subjects"""", """"Hobbies"""" ,""""Address"""", """"State and City"""".
+3.Click the """"Submit"""" button.","Prathi H V"
+"C151","Submit Form with Empty Required Fields","Prathi H V","1.Error messages should be displayed for each required field that is left empty, and the form is not submitted.","1.The Demo QA page contains a form with required fields.","Medium","Practice Form","1.Leave all required fields empty and attempt to submit the form.","Prathi H V"
+"C153","Interact with Frame.","Prathi H V","1.Interaction fails or results in an error indicating that the content is not yet available.","1.The Demo QA page contains an iframe.","Medium","AlertsFrames","1.Attempt to interact with elements inside the iframe before it has fully loaded.","Prathi H V"
+"C120","Verify New Tab Opens Successfully.","Prathi H V","1.Browser windows page should opens.
+2.A new browser tab should open.
+2.The new tab should display the DemoQA page or a blank page based on the site’s implementation.","1.Navigate to DemoQA page.
+2.User should be in Alerts, Frames section.","Medium","Browser windows","1.Navigate to the Browser Windows page.
+2.Click the """"New Tab"""" button.
+3.Observe the browser’s behaviour.","Prathi H V"
+"C121","Ensure that clicking the """"New Window"""" button opens a new browser window.","Prathi H V","1.Page should load successfully.
+2.A new browser window should open.
+3.The new window should display the DemoQA page or a blank page based on the site’s implementation.","1.The browser is open and the DemoQA Browser Windows page is loaded.","Medium","Browser windows","1.Navigate to the DemoQA Browser Windows page.
+2.Click the """"New Window"""" button.
+3.Observe the browser’s behaviour.","Prathi H V"
+"C122","Ensure that clicking the """"New Window Message"""" button opens a new window with a specific message.","Prathi H V","1.Page should loads.
+2.A new browser window should open.
+3.The new window should display a message indicating that Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.","1. The browser is open and the DemoQA Browser Windows page is loaded.","Medium","Browser windows","1.Navigate to the DemoQA Browser Windows page.
+2.Click the """"New Window Message"""" button.
+3.Observe the browser’s behaviour.","Prathi H V"
+"C123","verify Click Button to see alert","Prathi H V","1.Alerts section should be visible.
+2.An alert dialog should appear with the message: """"You clicked a button.""""","1.The DemoQA page is open, and the Alerts section is accessible.","Medium","Alerts","1.Navigate to the """"Alerts"""" section on the DemoQA page.
+2.Click the """"click me """" button present after Click Button to see alert message.","Prathi H V"
+"C124","Verify alert will appear after 5 seconds","Prathi H V","1.Alerts section should be visible.
+2.Wait for 5seconds and after that An alert dialog should appear with the message: """"This alert appeared after 5 seconds"""".","1.The DemoQA page is open, and the Alerts section is accessible.","Medium","Alerts","1.Navigate to the """"Alerts"""" section on the DemoQA page.
+2.Click the """"click me """" button present after alert will appear after 5 seconds text.","Prathi H V"
+"C125","Confirm that clicking the """"Confirm"""" button triggers a confirmation dialog and clicking """"Cancel"""" provides the correct result.","Prathi H V","1.Alerts section should display.
+2.The confirmation dialog should appear.
+3.The confirmation dialog should disappear, and a message on the page should display: """"You selected Cancel.""""","1.The DemoQA page is open, and the Alerts section is accessible.","Medium","Alerts","1.Navigate to the """"Alerts"""" section on the DemoQA page.
+2.Click the """"click me """" button after present in  confirm box will appear text.
+3.In the confirmation dialog, click """"Cancel.""""","Prathi H V"
+"C126","Ensure that the """"Prompt"""" button triggers a prompt dialog, accepts input, and displays the correct result.","Prathi H V","1.Alerts section should display.
+2.The confirmation dialog should appear. 
+3.Should accept the name.
+4.The prompt dialog should disappear, and a message on the page should display: """"You entered Name.""""","1.The DemoQA page is open, and the Alerts section is accessible.","Medium","Alerts","1.Navigate to the """"Alerts"""" section on the DemoQA page.
+2.Click the """"click me"""" button present after """"prompt box will appear"""" text.
+3.In the prompt dialog, enter the name into the text field.
+4.Click """"OK.""""","Prathi H V"
+"C152","Dismiss Alert with No Action","Prathi H V","1.The alert cannot be dismissed again.","1.An alert is visible on the Demo QA page.","Medium","Alerts","1.Attempt to dismiss the alert without performing any action or while it is already dismissed.","Prathi H V"
+"C155","Confirm Alert Messages","Prathi H V","1.Alerts should display the correct type and message.
+2.The visual style of each alert should matches its type (success, error, warning).","1.The Demo QA page includes alerts.","Medium","Alerts","1.Trigger each type of alert.
+2.Confirm the message and appearance of each alert.","Prathi H V"
+"C156","Handle Alert with Different Actions","Prathi H V","1.Each button should performs the expected action (e.g., closing the alert, redirecting to another page).","1.The Demo QA page includes alerts with different actions (e.g., ""OK"", ""Cancel"").","Medium","Alerts","1.Trigger an alert with multiple action buttons.
+2.Click each button in sequence.","Prathi H V"
+"C127","To ensure that the model dialogs are working correctly in terms of opening, interacting, and closing.","Prathi H V","1.The page should display text to trigger each type of dialog.
+2.The """"Small"""" dialog should open and be displayed on the screen.
+3.The dialog should close and be removed from the screen.
+4.The """"Large"""" dialog should open and be displayed on the screen.
+5.The dialog should close and be removed from the screen.","1.The DemoQA page is loaded.
+2.user should be in ""Dialogs"" section in the navigation menu.","Medium","Model dialogs","1.Check if the page displays various model dialogs (e.g., """"Small"""", """"Large"""", """"Alert"""", """"Confirmation"""").
+2.Click on the button to open the """"Small"""" dialog.
+3.Click on the button (e.g., """"Close"""") within the dialog.
+4.Click on the button to open the """"Large"""" dialog. 
+5.Click on the button (e.g., """"Close"""") within the dialog.","Prathi H V"
+"C158","Validate Widget Reset Functionality","Prathi H V","1.The widget should returns to its default or initial state.
+2.Any selected or adjusted values should cleared or reset.","1.The Demo QA page includes widgets with reset functionality (e.g., sliders, date pickers).","Medium","Widgets","1.Interact with various widgets (e.g., set slider values, pick a date).
+2.Click the """"Reset"""" or similar button for the widget.","Prathi H V"
+"C128","Verify Accordion Functionality","Prathi H V","1.Accordian section should be visible on the page .
+2.The content under the first Accordion item should expands smoothly, revealing additional information.
+3.The content under the first Accordion item collapses smoothly, hiding the additional information.
+4.The content under the second Accordion item expands smoothly, while the content of the first Accordion item collapses if only one section should be open at a time.
+5.The content under the third Accordion item expands smoothly, while the contents of both the first and second Accordion items collapse if only one section should be open at a time.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","Accordian","1.Navigate to Accordian feature.
+2.Click on the header of the first Accordion item (e.g., """"What is Lorem Ipsum?"""").
+3.Click on the header of the first Accordion item again.
+4.Click on the header of the second Accordion item (e.g., """"Where does it come from?"""").
+5.Click on the header of the third Accordion item (e.g., """"Why do we use it?"""").","Prathi H V"
+"C129","Verify AutoComplete Functionality","Prathi H V","1.AutoComplete section should be visible on the page .
+2.The input should be accepted and visible on the field.
+3.The entered input should be acceptable and visible on the field.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","AutoComplete","1.Navigate to AutoComplete feature.
+2.Locate """"Type multiple colour names"""" and enter the input"""" Blue, Black"""" or select from dropdown .
+2.Locate """"Type single colour name"""" and enter the input"""" Blue"""" or select from dropdown .","Prathi H V"
+"C130","Verify Date Selection in Date picker","Prathi H V","1.The Date picker calendar widget opens correctly when the input field is clicked.
+2.The selected date """"August 15, 2024"""" appears in the input field in the format MM/DD/YYYY.
+3.The selected date """"August 15, 2024"""" and time should  appears in the input field.
+4.The calendar widget closes automatically after the date is selected, and the chosen date is displayed correctly in the input field.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","Date Picker","1.Click on the Date picker input field to open the calendar widget.
+2.In the calendar widget, select the date """"August 15, 2024"""".
+3.In the date and time widget, select the date """"August 15, 2024"""" and time.
+4.Confirm the selection by clicking on the chosen date.","Prathi H V"
+"C154","Select Invalid Date in Date Picker","Prathi H V","1.The date picker rejects the invalid date selection and displays an appropriate error message.","1.The Demo QA page includes a date picker widget.","Medium","Date Picker","1.Attempt to select a date that is outside the allowed range or format.","Prathi H V"
+"C131","Verify Slider Adjustment and Value Display","Prathi H V","1.Slider section should be visible on the page and The Slider component should be visible and operable on the page .
+2.The initial value displayed next to the Slider should match the default value (e.g., """"25"""").
+3.After dragging the slider handle to the right and adjusting it to """"75"""", the value displayed next to the Slider should update to reflect the new value (""""75"""").
+4.The Slider should accurately reflect the adjusted value, and the value displayed next to the Slider should be consistent with the position of the handle.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","slider","1.Navigate to Slider feature Locate the Slider component on the page.
+2.Observe the initial value displayed next to the Slider (e.g., """"25"""").
+3.Drag the slider handle to the right to adjust the value to """"75"""".
+4.Release the slider handle and observe the updated value next to the Slider.","Prathi H V"
+"C132","Verify Progress Bar Updates Correctly.","Prathi H V","1.Progress Bar section should be visible on the page .
+2.The Progress Bar component should be visible and initially display a progress of """"0%"""" or another starting value.
+3.Clicking the button to start the progress should cause the Progress Bar to gradually fill according to the progress indicator (e.g., moving from """"0%"""" to """"100%"""").
+4.The Progress Bar should accurately reflect the progress, and the displayed percentage should increase in sync with the progress.
+5.Upon completion, the Progress Bar should display a final value of """"100%"""" (or the expected completion percentage), and any related status message or completion indication should be displayed.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","Progress Bar","1.Navigate to Progress Bar feature.
+2.Identify the button or control used to start or update the progress (e.g., """"Start"""" or """"Stop"""" button).
+3.Click the button to start the progress.
+4.Observe the Progress Bar as it updates.
+5.Wait for the progress to complete and observe the final state of the Progress Bar.","Prathi H V"
+"C133","Verify Tab Navigation and Content Display","Prathi H V","1.The Tabs component should be visible with multiple tab headers (e.g.,  """"What"""", """"origin"""", """"Use"""" and """"more"""").
+2.Clicking on the """"What"""" tab should display the content associated with that tab, and the content for the other tabs should be hidden.
+3.Clicking on the """"Origin"""" tab should display the content associated with that tab, and the content for the other tabs should be hidden.
+4.Clicking on the """"Use"""" tab should display the content associated with that tab, and the content for the other tabs should be hidden.
+5.Clicking on the """"more"""" tab should display the content associated with that tab, and the content for the other tabs should be hidden.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","Tabs","1.Locate the Tabs component on the page, which typically includes multiple tabs such as """"What"""", """"origin"""", """"Use"""" and """"more"""".
+2.Click on the """"What"""" tab and Observe the content displayed for the """"What"""" tab.
+3.Click on the """"origin"""" tab and Observe the content displayed for the """"origin"""" tab.
+4.Click on the """"Use"""" tab and Observe the content displayed for the """"Use"""" tab.
+5.Click on the """"more"""" tab and Observe the content displayed for the """"More"""" tab.","Prathi H V"
+"C134","Verify Tooltip Appearance and Content","Prathi H V","1.The element with the tooltip should be visible on the page.
+2.Hovering over the element should cause the tooltip to appear.
+3.The tooltip should be displayed near the hovered element and should contain the correct text as specified in the tooltip description (e.g., """"You hovered over the button"""").
+4.The tooltip should disappear when the mouse pointer is moved away from the element.","1.Check for internet connection.
+2.User should be in widgets section.","Medium","Tool Tip","1.Locate the tooltips .
+2.Hover the mouse pointer over the element with the tooltip (e.g., a button labelled """"Hover me to see"""").
+3.Observe the tooltip that appears.
+4.Verify the content of the tooltip matches the expected text.","Prathi H V"
+"C135","Verify Select Menu Functionality","Prathi H V","1.The Select Menu feature should be displayed correctly with all options visible.
+2.The dropdown list of options should be displayed.
+3.The selected option (e.g., """"Option 2"""") is highlighted in the dropdown menu, and the menu collapses.
+4.The dropdown menu should display """"Option 2"""" as the currently selected option.
+5.The dropdown menu should show """"Option 1"""" and """"Option 3"""" as selected options.","1.User has access to the DEMOQA page with the Select Menu feature.
+2.The page is fully loaded and interactive.","Medium","Select Menu","1.navigate to the section containing the Select Menu feature.
+2.Click on the dropdown menu to reveal the list of options.
+3.Click on an option from the dropdown menu (e.g., """"Option 2"""").
+4.Check the displayed selected option on the dropdown menu.
+5.For a multi-select dropdown menu, select multiple options (e.g., """"Option 1"""" and """"Option 3"""").","Prathi H V"
+"C157","Dropdown Selection with Invalid Inputs","Prathi H V","1.The dropdown menu does not accept invalid inputs, Users should prompted to select from available options only.","1.The Demo QA page includes dropdown menus with predefined options.","Medium","Select Menu","1.Attempt to select an option that is not in the dropdown menu (e.g., enter a value manually if the dropdown does not support manual input).","Prathi H V"
+"C136","Verify Selectable Feature","Prathi H V","1.The Selectable feature should be displayed with a list of selectable items.
+2.Items should displayed and are in their default state, with no items pre-selected.
+3.The clicked item  should be highlighted or show a visual indicator of selection.","1.User has access to the DEMOQA page with the Selectable feature.
+2.The page is fully loaded and interactive.","Medium","Selectable","1.navigate to the section containing the Selectable feature.
+2.Observe and record the initial state of items (whether they are selectable and if any items are pre-selected).
+3.Click on a single item to select it.","Prathi H V"
+"C137","Verify Sortable Feature","Prathi H V","1.The Sortable feature is displayed with a list of items that can be reordered.
+2.The list of items should be displayed in its initial state with items in their default order.
+3.The item (e.g., """"one"""") should be moved to the new position between """"two"""" and """"three"""", and the list should reflect this new order.
+4.The list should display """"one"""", """"two"""", """"three"""" and the remaining items in their new positions.","1.User has access to the DEMOQA page with the Sortable feature.
+2.The page is fully loaded and interactive.","Medium","Sortable","1.Navigate to the section containing the Sortable feature.
+2.Observe and record the initial order of items in the sortable list.
+3.Click and hold an item (e.g., """"One""""), then drag it to a new position in the list (e.g., between """"two"""" and """"three"""").
+4.Check the new order of items in the sortable list after the drag-and-drop action.","Prathi H V"
+"C138","Droppable feature allows items to be dragged and dropped onto specified drop targets correctly.","Prathi H V","1.The Droppable feature is displayed with draggable items and designated drop targets.
+2.Draggable items should be visible and can be interacted with, and drop targets are displayed and are ready to receive items.
+3.The draggable item (e.g., """"drag me"""") should move smoothly to the drop target (e.g., """"dropped""""), and visual feedback (e.g., highlighting) should indicate that the item can be dropped.","1.User has access to the DEMOQA page with the Droppable feature.
+2.The page is fully loaded and interactive.","Medium","Droppable","1.navigate to the section containing the Droppable feature.
+2.Observe the initial state of draggable items and drop targets to ensure they are visible and correctly labelled.
+3.Click and hold a draggable item (e.g., """"drag me""""), then drag it over to a drop target (e.g., """"dropped"""").","Prathi H V"
+"C144","Verify that a draggable element reverts to its original position when dropped inside the droppable area.","Prathi H V","1.The Demo QA page should loads successfully with visible draggable and droppable elements.
+2.Draggable and dropped area elements should be present.
+3.The draggable element follows the cursor and should appears to be picked up.
+4.The element is released inside the droppable area and highlighted as dropped.
+5.The draggable element(will revert) should returns to its original position on the page.","1.User should connected to the internet.","Medium","Droppable","1.Open a web browser and go to the Demo QA page that contains draggable and droppable elements.
+2.Click on revert draggable tab.
+3.Click and hold the draggable element(will revert) with the mouse.
+4.Drop the draggable element by releasing the mouse button inside the droppable area.
+5.Check if the draggable element has reverted to its original position.","Prathi H V"
+"C145","Verify that a draggable element should not reverts to its original position when dropped inside the droppable area.","Prathi H V","1.The Demo QA page should loads successfully with visible draggable and droppable elements.
+2.Draggable and dropped area elements should be present.
+3.The draggable element follows the cursor and should appears to be picked up.
+4.The element is released inside the droppable area and highlighted as dropped.
+5.The draggable element(will not revert) should not returns to its original position on the page it should be in dropped area.","1.User should connected to the internet.","Medium","Droppable","1.Open a web browser and go to the Demo QA page that contains draggable and droppable elements.
+2.Click on revert draggable tab.
+3.Click and hold the draggable element(will not revert) with the mouse.
+4.Drop the draggable element by releasing the mouse button inside the droppable area.
+5.Check if the draggable element reverted to its original position.","Prathi H V"
+"C139","Verify the Draggable Feature","Prathi H V","1.The Draggable feature is displayed with draggable items that can be interacted with.
+2.Draggable items should be displayed and can be selected for dragging.
+3.The draggable item (e.g., """"drag me"""") should move smoothly to the new position, and visual feedback (e.g., a placeholder or visual indicator) should show the item's movement.
+4.The draggable item (e.g., """"drag me"""") should be successfully placed at the new position, and its location should be updated accordingly
+5.The draggable item (e.g., """"drag me"""") should be displayed at the new position, and any visual feedback should indicate its new location.","1.User has access to the DEMOQA page with the Draggable feature.
+2.The page is fully loaded and interactive.","Medium","Draggable","1.navigate to the section containing the Draggable feature.
+2.Observe the initial state of the draggable items to ensure they are visible and can be interacted with.
+3.Click and hold a draggable item (e.g., """"drag me""""), then drag it to a new position within the page.
+4.Release the mouse button to drop the item at the new position.
+5.Check the new position of the draggable item to ensure it has been placed correctly.","Prathi H V"
+"C140","Verify users can able to log in with valid credentials","Prathi H V","1.The Login page should displayed with fields for entering credentials (e.g., username, password) and a login button.
+2.All login fields and the login button should be visible and interactive.
+3.The user should be logged in successfully, and redirected to the appropriate landing page or dashboard.","1.User should accessed DemoQA page.
+2.User should be in Bookstore applications section.","Medium","Login","1.navigate to the Login page.
+2.Observe the login form to ensure all fields and buttons are visible and functional (e.g., username field, password field, login button).
+3.Enter valid credentials into the login fields (e.g., Username: """"testuser1"""", Password: """"ValidPassword123""""), and click the login button.","Prathi H V"
+"C141","Enter Invalid Credentials and Attempt to Log In","Prathi H V","1.Credentials should accepted.
+2.The system should display an error message indicating that the login attempt was unsuccessful (e.g., """"Invalid username or password"""").","1.User should be in Login page.
+2.User should already registered.","Medium","Login","1.Enter invalid credentials into the login fields (e.g., Username: """"wronguser1"""", Password: """"WrongPassword1"""")
+2.click the login button.","Prathi H V"
+"C142","Verify the Bookstore Feature and check whether the  book details is displayed or not.","Prathi H V","1.The Bookstore page should be displayed with a search bar, list of books, and navigation options.
+2.All expected elements should be visible and interactive.
+3.The list of books should update to show results that match the search criteria.
+4.The details page for the selected book should be displayed, showing information such as author, description, and price or redirect to book details page.","1.User has access to the DEMOQA page with the Bookstore feature.
+2.The page is fully loaded and interactive.","Medium","Book Store","1.navigate to the Bookstore section.
+2.Inspect the page to ensure all elements are present (e.g., search bar, book list, book details link.
+3.Enter a book title or keyword into the search bar (e.g., """"Git Pocket Guide""""), and click the search button.
+4.Click on a book title or """"View Details"""" link for a specific book .","Prathi H V"
+"C143","Verify the Profile Feature","Prathi H V","1.The Profile page should be displayed with the text """"Currently you are not logged into the Book Store application, please visit the login page to enter or register page to register yourself"""".
+2.User should navigated to login section.
+3.Input should be accepted.
+4.User should redirected to profile page and logged in.","1.User has access to the DEMOQA page.
+2.User is logged in and has a profile with existing information.","Medium","Profile","1.Navigate to the Profile section.
+2.Click on login.
+3.Enter existed username and password in the respective fields.
+4.Click on login button.","Prathi H V"
+"C146","Verify Page Load","Prathi H V","1.The page should loads successfully with no errors, and all elements (text, images, buttons) are displayed correctly.","1.Ensure the Demo QA page URL is accessible and the server is running.","Medium","Home page","1.Open the Demo QA page in a web browser","Prathi H V"
+"C147","Verify Header and Footer","Prathi H V","1.The header and footer should be displayed correctly with all expected elements (logo, navigation links, copyright text).","1.Coonected with the internet.
+2.DemoQa page should be accessible.","Medium","Home page","1.Open the Demo QA page and check the header and footer sections.","Prathi H V"
+"C148","Verify Page Title","Prathi H V","1.The page title should matches the expected title.","1.User should be in DemoQA page.","Medium","Home page","1.Check the browser tab or title bar for the page title.","Prathi H V"
