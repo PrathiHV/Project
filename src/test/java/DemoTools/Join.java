@@ -17,7 +17,7 @@ public class Join extends BaseClass {
         WebElement title = driver.findElement(By.xpath("//img[@alt='Selenium Online Training']"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", title);
         wait.until(ExpectedConditions.elementToBeClickable(title)).click();
-        driver.findElement(By.xpath("//a[text()='Go To Registration ']")).click();
+        
 
     }
 }
