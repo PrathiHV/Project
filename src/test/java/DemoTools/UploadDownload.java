@@ -13,6 +13,6 @@ public class UploadDownload extends BaseClass {
         driver.get("https://demoqa.com/upload-download");
         WebElement fileInput = driver.findElement(By.id("uploadFile"));
         fileInput.sendKeys("\"C:\\Users\\User\\Downloads");  
-        Thread.sleep(3000);
+        Thread.sleep(1000);
     }
 }
